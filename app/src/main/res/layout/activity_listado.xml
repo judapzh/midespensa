@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listado">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="231dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textV_producto"
+            android:layout_width="220dp"
+            android:layout_height="32dp"
+            android:text="@string/Txtv_producto" />
+
+        <EditText
+            android:id="@+id/editTxt_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textVcantidad"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Txtv_cantidad" />
+
+        <EditText
+            android:id="@+id/editTextcantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textcosto"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Txtv_costo" />
+
+        <EditText
+            android:id="@+id/editTextcosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="registrar"
+        android:text="@string/agrega"
+        app:layout_constraintBottom_toTopOf="@+id/btnActualiza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <Button
+        android:id="@+id/btnActualiza"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="Actualizar"
+        android:text="@string/modifica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/btnconsul"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="Consultar"
+        android:text="Consukta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualiza" />
+
+    <Button
+        android:id="@+id/btnElimina"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:onClick="Eliminar"
+        android:text="eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/btnconsul" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

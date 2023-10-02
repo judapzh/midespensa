@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Midespensa</string>
+    <string name="name">Nombre y Apellidos</string>
+    <string name="celular">Celular</string>
+    <string name="email">Correo</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="pregunta_seguridad">Pregunta de Seguridad</string>
+    <string name="respuesta">Respuestra</string>
+    <string name="ingreso">Ingresar</string>
+    <string name="registro">Registrate</string>
+    <string name="inicio">iniciar sesion</string>
+    <string name="TxtV_Bienvenida">Bienvenido a mi Despensa tu mejor aliado a la hora de comprar</string>
+    <string name="txtv_Fromregistro">Para Registrarte diligencia la informacion solocitada a continuacion</string>
+    <string name="Txtv_olvidocont">Olvidaste Tu Contraseña</string>
+    <string name="agrega">Agregar</string>
+    <string name="modifica">Modificar</string>
+    <string name="Txtv_producto">Producto</string>
+    <string name="Txtv_cantidad">Cantidad</string>
+    <string name="Txtv_costo">Costo</string>
+    <string name="Txtv_total">Total</string>
+    <string name="hola">Bienvenido/a</string>
+</resources>

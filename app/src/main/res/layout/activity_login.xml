@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:onClick="Nuevo"
+        android:text="@string/registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/btn_ingreso"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textV_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/editTxt_email1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contrasena" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,LabelFor" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ingreso"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:onClick="Ingresar"
+        android:text="@string/ingreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/TxtV_Recuperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Txtv_olvidocont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ingreso" />
+
+    <Button
+        android:id="@+id/btn_recuperar"
+        android:layout_width="168dp"
+        android:layout_height="51dp"
+        android:background="#292991"
+        android:text="recuperala aqui"
+        app:backgroundTint="#4F5FCD"
+        app:backgroundTintMode="src_over"
+        app:iconTint="#0C0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtV_Recuperar"
+        app:layout_constraintVertical_bias="0.035"
+        app:rippleColor="#0B0909"
+        app:strokeColor="#121010"
+        tools:ignore="HardcodedText,MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

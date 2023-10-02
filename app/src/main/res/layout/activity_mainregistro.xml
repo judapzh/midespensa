@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainregistro">
+
+
+    <LinearLayout
+        android:id="@+id/layout_registro"
+        android:layout_width="409dp"
+        android:layout_height="503dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnknownId">
+
+        <TextView
+            android:id="@+id/textV_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editText_PersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textV_celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/celular" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textV_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textV_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contrasena" />
+
+        <EditText
+            android:id="@+id/editText_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textV_preguntase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pregunta_seguridad" />
+
+        <EditText
+            android:id="@+id/editText_preguntaseg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/textV_respuesta"
+            android:layout_width="398dp"
+            android:layout_height="36dp"
+            android:text="@string/respuesta" />
+
+        <EditText
+            android:id="@+id/editText_respuesta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill,LabelFor" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtv_fromre"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/txtv_Fromregistro"
+        app:layout_constraintBottom_toTopOf="@+id/layout_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_registro"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="92dp"
+        android:onClick="registrar"
+        android:text="@string/registro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_consultar"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:onClick="Consultar"
+        android:text="Consultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toEndOf="@+id/btn_registro"
+        app:layout_constraintTop_toBottomOf="@+id/layout_registro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volver"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_registro"
+        app:layout_constraintVertical_bias="0.709" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
