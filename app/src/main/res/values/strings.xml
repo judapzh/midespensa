@@ -19,4 +19,9 @@
     <string name="Txtv_costo">Costo</string>
     <string name="Txtv_total">Total</string>
     <string name="hola">Bienvenido/a</string>
+    <string name="btn_agregar">Agregar/a</string>
+    <string name="btn_consultar">Consultar/a</string>
+    <string name="btn_actualizar">Modificar/a</string>
+    <string name="btn_eliminar">Eliminar/a</string>
+    <string name="btn_atras">REgresar/a</string>
 </resources>

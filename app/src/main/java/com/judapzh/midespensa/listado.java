@@ -70,7 +70,7 @@ public class listado extends AppCompatActivity {
 
             db.insert(Adminsqlite.LISTA, null, datos);
 
-            Toast.makeText(this, "Usuario registrado con éxito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Producto ingresado con éxito", Toast.LENGTH_SHORT).show();
 
             // Limpia los campos después de la inserción exitosa
             producto.setText("");
