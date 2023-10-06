@@ -108,7 +108,7 @@ public class Mainregistro extends AppCompatActivity {
 
         if(cursor!=null){
         if (cursor.moveToFirst()) {
-            nombre.setText(cursor.getString(1));
+            nombre.setText(cursor.getString(2));
             celular.setText(cursor.getString(3));
             contrasena.setText(cursor.getString(4)); // Corrección: índice 3 en lugar de 4
             pregunta.setText(cursor.getString(5)); // Corrección: índice 4 en lugar de 5
@@ -120,6 +120,55 @@ public class Mainregistro extends AppCompatActivity {
     }
 
 }
+    //metodo eliminar//
+    public void Eliminar(View view) {
+        String Correo = email.getText().toString();
+        Adminsqlite admin = new Adminsqlite(this);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
+        int res = db.delete("registro", "email='" + Correo + "'", null);
+        if (res != 0) {
+            Toast.makeText(this, "Usuario Eliminado con exito", Toast.LENGTH_SHORT).show();
+            nombre.setText("");
+            celular.setText("");
+            email.setText("");
+            contrasena.setText("");
+            pregunta.setText("");
+            respuesta.setText("");
+        } else {
+            Toast.makeText(this, "Usuario no encontrado", Toast.LENGTH_SHORT).show();
+        }
+    }
+    //metodo Actualizar//
+    public void Actualizar(View view) {
+        String Nombre = nombre.getText().toString();
+        String Celular = celular.getText().toString();
+        String Correo = email.getText().toString();
+        String Contrasena = contrasena.getText().toString();
+        String Pregunta = pregunta.getText().toString();
+        String Respuesta = respuesta.getText().toString();
+
+        Adminsqlite admin = new Adminsqlite(this);
+        SQLiteDatabase db = admin.getWritableDatabase();
+
+        ContentValues valores = new ContentValues();
+        valores.put("nombre", Nombre);
+        valores.put("celular", Celular);
+        valores.put("email", Correo);
+        valores.put("contrasena", Contrasena);
+        valores.put("Pregunta", Pregunta);
+        valores.put("respuesta", Respuesta);
+
+        int res = db.update("registro", valores, "email='" + Correo + "' ", null);
+        if (res != 0) {
+            Toast.makeText(this, "Actualizado con exito", Toast.LENGTH_SHORT).show();
+            nombre.setText("");
+            celular.setText("");
+            email.setText("");
+            contrasena.setText("");
+            pregunta.setText("");
+            respuesta.setText("");
+        }
+
+    }
 }
-
-

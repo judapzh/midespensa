@@ -9,8 +9,9 @@
 
     <LinearLayout
         android:id="@+id/layout_registro"
-        android:layout_width="409dp"
-        android:layout_height="503dp"
+        android:layout_width="406dp"
+        android:layout_height="444dp"
+        android:layout_marginBottom="20dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btn_registro"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,21 +102,21 @@
         android:id="@+id/txtv_fromre"
         android:layout_width="379dp"
         android:layout_height="53dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="28dp"
         android:text="@string/txtv_Fromregistro"
         app:layout_constraintBottom_toTopOf="@+id/layout_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_registro"
-        android:layout_width="160dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="92dp"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="132dp"
         android:onClick="registrar"
         android:text="@string/registro"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,16 +125,16 @@
 
     <Button
         android:id="@+id/btn_consultar"
-        android:layout_width="160dp"
-        android:layout_height="49dp"
+        android:layout_width="115dp"
+        android:layout_height="46dp"
         android:onClick="Consultar"
         android:text="Consultar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toEndOf="@+id/btn_registro"
         app:layout_constraintTop_toBottomOf="@+id/layout_registro"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.136" />
 
     <Button
         android:id="@+id/Btn_regresar"
@@ -143,9 +144,31 @@
         android:text="@string/btn_atras"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_registro"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.872" />
+
+    <Button
+        android:id="@+id/btnActualiza"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="Actualizar"
+        android:text="@string/modifica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_consultar" />
+
+    <Button
+        android:id="@+id/btnElimina"
+        android:layout_width="141dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Eliminar"
+        android:text="@string/btn_eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
